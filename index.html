@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dapur Co.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <nav>
+        <p class="logo">Dapur Co.</p>
+        <button class="hamburger" id="hamburger">☰</button>
+        <div class="nav-links" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#daily-special">Daily Special</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#hours">Hours</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Real Food, Real Fast.</h1>
+            <p>Masakan rumahan yang disajikan dengan cepat, segar, dan tanpa ribet</p>
+            <button onclick="document.querySelector('#menu').scrollIntoView({behavior: 'smooth'})">Lihat Menu</button>
+        </div>
+    </section>
+
+    <section class="counter" id="counter">
+        <div class="counter-grid">
+            <div class="counter-card">
+                <h3 class="counter-number" data-target="500">0</h3>
+                <p>Pelanggan Puas</p>
+            </div>
+            <div class="counter-card">
+                <h3 class="counter-number" data-target="20">0</h3>
+                <p>Menu Pilihan</p>
+            </div>
+            <div class="counter-card">
+                <h3 class="counter-number" data-target="3">0</h3>
+                <p>Tahun Berdiri</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="daily-special" id="daily-special">
+        <h2>Menu Hari Ini</h2>
+        <p class="day-label">Senin</p>
+        <div class="special-card">
+            <h3 id="special-name">Loading...</h3>
+            <p id="special-desc">Loading...</p>
+            <span id="special-price">Loading...</span>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Menu Kami</h2>
+        <p>Pilihan masakan rumahan terbaik untuk kamu</p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">Semua</button>
+            <button class="filter-btn" data-category="rice">Nasi</button>
+            <button class="filter-btn" data-category="soup">Sup</button>
+            <button class="filter-btn" data-category="drink">Minuman</button>
+        </div>
+
+        <div class="menu-grid"></div>
+    </section>
+    
+    <section class="testimonials" id="testimonials">
+        <div class="testimonials-header">
+            <h2>Apa Kata Mereka?</h2>
+            <p>Ribuan pelanggan puas setiap harinya</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p>Dapur Co. jadi andalan makan siang gue setiap hari. Cepat, enak, dan harganya masuk akal banget!</p>
+                <div class="testimonial-footer">
+                    <div class="avatar">A</div>
+                    <div class="testimonial-info">
+                        <h4>Andi Pratama</h4>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="label">Pelanggan Setia</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p>Nasi rendang nya juara! Rasanya kayak masakan sendiri. Delivery juga selalu tepat waktu.</p>
+                <div class="testimonial-footer">
+                    <div class="avatar">S</div>
+                    <div class="testimonial-info">
+                        <h4>Sari Dewi</h4>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="label">Pelanggan Setia</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon">"</div>
+                <p>Pertama coba karena rekomendasi teman, sekarang udah gak bisa stop order. Worth it banget!</p>
+                <div class="testimonial-footer">
+                    <div class="avatar">R</div>
+                    <div class="testimonial-info">
+                        <h4>Reza Firmansyah</h4>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="label">Pelanggan Setia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hours" id="hours">
+        <h2>Jam Operasional</h2>
+        <p id="status-indicator">🟢 Buka Sekarang</p>
+
+        <div class="hours-grid">
+            <div class="hours-card">
+                <h4>Senin - Jumat</h4>
+                <p>08.00 - 21.00</p>
+            </div>
+            <div class="hours-card">
+                <h4>Sabtu - Minggu</h4>
+                <p>09.00 - 22.00</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <p class="logo">Dapur Co.</p>
+                <p class="tagline">Cita rasa autentik nusantara, disajikan hangat dari dapur kami ke meja anda.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#daily-special">Daily Special</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#hours">Hours</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Kontak</h4>
+                <p>📍 Jl. Kemang Raya No. 12, Jakarta Selatan</p>
+                <p>📱 +62-812-3456-7890 (Whatsapp)</p>
+                <p>🕒 Senin - Jumat: 08.00 - 21.00</p>
+                <p>🕒 Sabtu - Minggu: 09.00 - 22.00</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+                <p>&copy; 2026 Dapur Co. All rights reserved.</p>
+            </div>
+            </footer>
+    <a href="https://wa.me/628124567890" target="_blank" class="whatsapp-btn">
+        💬 Order via Whatsapp
+    </a>
+
+    <script src="script.js"></script>
+</body>
